@@ -1,8 +1,8 @@
 {
-  "version": "0.1.1",
-  "url": "https://github.com/xxkyrosxxx-maker/ryvexel-launcher/releases/download/v0.1.1/Ryvexel-Launcher-Setup-0.1.1.exe",
-  "size": 101467866,
-  "sha512": "3cdf8e2f66b086e05dbf9332d678fecda7afa632003689931f8fb78152f1f4ae188b7adbce15ed9228764efe81018a61f59380bafe2405f91fef5f2b0d8eb26d",
-  "notes": "Автоустановка Java 21 при запуске игры и кнопка «Установить Java 21» на главной",
+  "version": "0.1.2",
+  "url": "https://github.com/xxkyrosxxx-maker/ryvexel-launcher/releases/download/v0.1.2/Ryvexel-Launcher-Setup-0.1.2.exe",
+  "size": 101515560,
+  "sha512": "f6960daa5046058ac42758d7d1d9086b494618cdb2b08ab6e50c281ddad6cdb4a5c3b97bda33b502ab5017580777b295269be4397be414f116de979a62f3bd4c",
+  "notes": "Плащ Голубь в косметике (виден в игре), официальный аккаунт xxkyros с паролем и статусом Official, бейдж Основатель",
   "date": "2026-10-08"
 }
