@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryvexel Launcher — скачивание</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        color: #ede9f7;
+        background:
+          radial-gradient(1200px 700px at 20% -10%, #241040 0%, transparent 60%),
+          radial-gradient(900px 600px at 110% 110%, #3a1a7a 0%, transparent 55%),
+          #0a0612;
+        padding: 24px;
+      }
+      .card {
+        width: 100%;
+        max-width: 560px;
+        background: rgba(20, 12, 36, 0.92);
+        border: 1px solid rgba(144, 72, 240, 0.35);
+        border-radius: 18px;
+        padding: 34px 36px;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+      }
+      .head { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; }
+      .head img { width: 56px; height: 56px; border-radius: 14px; }
+      h1 { font-size: 26px; letter-spacing: 0.5px; }
+      h1 span {
+        background: linear-gradient(90deg, #9048f0, #c4a4ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .sub { color: #9c8fc0; font-size: 14px; }
+      .ver {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 14px 16px;
+        border: 1px solid rgba(144, 72, 240, 0.25);
+        border-radius: 12px;
+        background: rgba(144, 72, 240, 0.08);
+        margin-bottom: 14px;
+      }
+      .ver b { font-size: 20px; }
+      .ver span { color: #9c8fc0; font-size: 13px; }
+      .notes { color: #c9bfe6; font-size: 14px; line-height: 1.5; margin-bottom: 20px; min-height: 20px; }
+      .btn {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 14px 18px;
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 16px;
+        color: #fff;
+        background: linear-gradient(90deg, #7a3be8, #9048f0);
+        box-shadow: 0 10px 30px rgba(144, 72, 240, 0.35);
+        transition: transform 0.15s, filter 0.15s;
+      }
+      .btn:hover { transform: translateY(-2px); filter: brightness(1.08); }
+      .status { margin-top: 14px; font-size: 13px; color: #9c8fc0; text-align: center; }
+      .status a { color: #c4a4ff; }
+      footer { margin-top: 22px; text-align: center; font-size: 12px; color: #6e6390; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="head">
+        <img src="logo.png" alt="Ryvexel" />
+        <div>
+          <h1><span>RYVEXEL</span> LAUNCHER</h1>
+          <div class="sub">Визуальный клиент Minecraft · by xxkyros</div>
+        </div>
+      </div>
+
+      <div class="ver"><span>Последняя версия</span><b id="ver">…</b></div>
+      <div class="notes" id="notes"></div>
+      <a class="btn" id="dl" href="#">Скачать установщик</a>
+      <div class="status" id="status">Читаем файл обновлений…</div>
+
+      <footer>Сайт обновлений Ryvexel Launcher · проверять обновления можно и в настройках лаунчера</footer>
+    </div>
+
+    <script>
+      // Показываем свежую версию из latest.json и ссылку на установщик
+      fetch('latest.json', { cache: 'no-store' })
+        .then(function (r) {
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          return r.json();
+        })
+        .then(function (m) {
+          document.getElementById('ver').textContent = m.version;
+          document.getElementById('notes').textContent = m.notes || '';
+          document.getElementById('dl').href = m.url;
+          var size = m.size ? (m.size / (1024 * 1024)).toFixed(1).replace('.', ',') + ' МБ' : '';
+          document.getElementById('status').textContent = 'Размер: ' + size + ' · установка пошаговая';
+        })
+        .catch(function () {
+          document.getElementById('ver').textContent = '?';
+          document.getElementById('dl').href =
+            'https://github.com/xxkyrosxxx-maker/ryvexel-launcher/releases';
+          document.getElementById('status').innerHTML =
+            'Не удалось получить файл обновлений. Вручную: <a href="https://github.com/xxkyrosxxx-maker/ryvexel-launcher/releases">страница релизов</a>';
+        });
+    </script>
+  </body>
+</html>
