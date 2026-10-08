@@ -1,8 +1,8 @@
 {
-  "version": "0.1.0",
-  "url": "https://github.com/xxkyrosxxx-maker/ryvexel-launcher/releases/download/v0.1.0/Ryvexel-Launcher-Setup-0.1.0.exe",
-  "size": 101466693,
-  "sha512": "df0c45492908b57e7ecfae8452b39d6bb5fda8d85d043abafc5cdc16eb9f23c2039147c22791df7b050c710d3872ddffa10e1dbca0cc31d316f4214f0cf42c19",
-  "notes": "Обновление лаунчера до версии 0.1.0",
+  "version": "0.1.1",
+  "url": "https://github.com/xxkyrosxxx-maker/ryvexel-launcher/releases/download/v0.1.1/Ryvexel-Launcher-Setup-0.1.1.exe",
+  "size": 101467866,
+  "sha512": "3cdf8e2f66b086e05dbf9332d678fecda7afa632003689931f8fb78152f1f4ae188b7adbce15ed9228764efe81018a61f59380bafe2405f91fef5f2b0d8eb26d",
+  "notes": "Автоустановка Java 21 при запуске игры и кнопка «Установить Java 21» на главной",
   "date": "2026-10-08"
 }
