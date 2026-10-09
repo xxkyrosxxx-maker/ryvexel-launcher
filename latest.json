@@ -1,8 +1,8 @@
 {
-  "version": "0.1.6",
-  "url": "https://github.com/xxkyrosxxx-maker/ryvexel-launcher/releases/download/v0.1.6/Ryvexel-Launcher-Setup-0.1.6.exe",
-  "size": 103790697,
-  "sha512": "d0b66aeefd995abe4671928f71f4454d86c0bcbed962f9b4301fd144eacabae1761e2777fd1877f60148afb1ff253e0813360fdd87cf04c5cccdcce51f1eda28",
-  "notes": "Плащи на новом моде AdaptiveCaps: анимированные (GIF) и статичные одинаково работают на 1.21.4 и 1.21.11. Добавлено 22 плаща из коллекции и анимированный плащ с лого Ryvexel. Плащ «Голубь» переведён на новую схему.",
+  "version": "0.1.7",
+  "url": "https://github.com/xxkyrosxxx-maker/ryvexel-launcher/releases/download/v0.1.7/Ryvexel-Launcher-Setup-0.1.7.exe",
+  "size": 104068821,
+  "sha512": "9763ed17429933a7192bcdde3dd15ac90334debb553103d0a7da87bf9ef3d3b82ffff4fa243e537e8e5d1bc1f9e2542952204be585bb101b861a59db59f942c2",
+  "notes": "Исправлены превью плащей: теперь показывают сам арт как обычную картинку, а не пустую текстуру",
   "date": "2026-10-09"
 }
