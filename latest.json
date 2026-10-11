@@ -1,8 +1,8 @@
 {
-  "version": "0.1.7",
-  "url": "https://github.com/xxkyrosxxx-maker/ryvexel-launcher/releases/download/v0.1.7/Ryvexel-Launcher-Setup-0.1.7.exe",
-  "size": 104068821,
-  "sha512": "9763ed17429933a7192bcdde3dd15ac90334debb553103d0a7da87bf9ef3d3b82ffff4fa243e537e8e5d1bc1f9e2542952204be585bb101b861a59db59f942c2",
-  "notes": "Исправлены превью плащей: теперь показывают сам арт как обычную картинку, а не пустую текстуру",
-  "date": "2026-10-09"
+  "version": "0.2.0",
+  "url": "https://ryvexel.ru/Ryvexel-Launcher-Setup-0.2.0.exe",
+  "size": 101711494,
+  "sha512": "e89b2602bc3229f11d78f7b70754b61ca87f94b61cc08dc546c554fe1e75c4ea0ee4c26b96c935f3aa4a655d032d679ab982e80fefbaad456a6673bce267bdef",
+  "notes": "Обновление 0.2.0: убрали визуалы, новый главный экран с анимациями, красивые кнопки и приятные звуки кликов, менеджер аккаунтов, раздел Косметика и друзья с чатом прямо в списке.",
+  "date": "2026-10-11"
 }
